@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637568365190000000
+      ticks: 637568644760000000
     m_Hash: 4007186375
   m_LockFileStatus:
     m_FilePath: /Users/danielsau/Documents/GitHub/CSCI4120-project/csci4120proj/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637568365290000000
+      ticks: 637569052790000000
     m_Hash: 38571225
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
