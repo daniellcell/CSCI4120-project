@@ -9,14 +9,22 @@ public class CameraController : MonoBehaviour
     public float speed = 6f;
     public float turnTime = 0.1f;
     float turnVelocity;
-
+    // DialogueManager manager = gameObject.AddComponent<DialogueManager>();
+    // static string[] items = { "Item1", "Item2", "Item3", "Item4" };
+    // Dialogue dialogue = new Dialogue(items,"xd");
     // Update is called once per frame
-    void Update()
+    void Update()   
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = new Vector3(horizontal, 0f, vertical).normalized;
-        
+        if (Input.GetButtonDown ("Interact")){
+            // dialogue.name = "yoyo";
+            // string[] items = { "Item1", "Item2", "Item3", "Item4" };
+            // dialogue.sentences = items;
+            print("interracted");
+            // manager.StartDialogue(dialogue);
+        }
         if (dir.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
