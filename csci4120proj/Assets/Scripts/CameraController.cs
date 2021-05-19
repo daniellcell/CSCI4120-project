@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 { 
     public CharacterController controller;
     public Transform cam;
-    public float speed = 6f;
+    public float speed = 1f;
     public float turnTime = 0.1f;
     float turnVelocity;
 
