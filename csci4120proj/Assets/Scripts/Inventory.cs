@@ -4,5 +4,13 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public static bool[] keys = new bool[3];
+    public static bool[] keys = new bool[4];
+
+    void Start()
+    {
+        //Initialize the value of the inventory
+        for (int i = 0; i < 4; i++){
+            keys[i] = false;
+        }   
+    }
 }
