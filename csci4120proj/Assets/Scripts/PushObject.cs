@@ -39,7 +39,10 @@ public class PushObject : MonoBehaviour
     private void Update()
     {
         vel = rb.velocity.magnitude;
-        if (Input.GetKeyUp(KeyCode.F))
+        GameObject player = GameObject.FindWithTag("Player");
+        Animator anim;
+        anim = player.GetComponent<Animator>();
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Push"))
         {
             rb.isKinematic = true;
 
@@ -69,9 +72,11 @@ public class PushObject : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.F))
+            GameObject player = collision.gameObject;
+            Animator anim;
+            anim = player.GetComponent<Animator>();
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Push"))
             {
-
                 rb.isKinematic = false;
                 dir = collision.contacts[0].point - transform.position;
                 dir = -dir.normalized;
