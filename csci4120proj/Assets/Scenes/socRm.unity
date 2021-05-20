@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427123, b: 0.5645229, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10333,7 +10333,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.00014553707, y: 0.9997164, z: -0.0229584, w: -0.006337376}
+  m_LocalRotation: {x: -0.00014694803, y: 0.999716, z: -0.022958383, w: -0.006398822}
   m_LocalPosition: {x: -5.867922, y: 0.235, z: 0.21361017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10734,7 +10734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004675582}
   m_LocalRotation: {x: 0.08759448, y: 0.6919417, z: -0.08518191, w: 0.7115392}
-  m_LocalPosition: {x: -0.0000017166138, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0000020027162, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 329556822}
@@ -12445,7 +12445,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181215899}
-  m_LocalRotation: {x: 0.016131131, y: 0.7113874, z: -0.016336953, w: 0.702425}
+  m_LocalRotation: {x: 0.016130118, y: 0.7114306, z: -0.016337933, w: 0.7023813}
   m_LocalPosition: {x: -0.0000008583069, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14608,7 +14608,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348065837}
-  m_LocalRotation: {x: 0.074637435, y: 0.6933766, z: -0.07258173, w: 0.7130148}
+  m_LocalRotation: {x: 0.074637435, y: 0.69337654, z: -0.07258173, w: 0.71301484}
   m_LocalPosition: {x: -0.0000008583069, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14650,7 +14650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4c45e4f6bb0dc4c9cbb067abc90b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
   ObMass: 0
   PushAtMass: 1
   PushingTime: 10
@@ -14759,11 +14759,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
