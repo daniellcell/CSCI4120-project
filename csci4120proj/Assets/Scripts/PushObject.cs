@@ -77,11 +77,14 @@ public class PushObject : MonoBehaviour
             anim = player.GetComponent<Animator>();
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("Push"))
             {
-                rb.isKinematic = false;
-                dir = collision.contacts[0].point - transform.position;
-                dir = -dir.normalized;
-
-
+                if (Inventory.power >= rb.mass){
+                    rb.isKinematic = false;
+                    dir = collision.contacts[0].point - transform.position;
+                    dir = -dir.normalized;
+                }
+                else{
+                    // Not enough strength
+                }
             }
         }
 

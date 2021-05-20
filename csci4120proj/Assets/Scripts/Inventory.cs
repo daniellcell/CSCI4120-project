@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public static bool[] keys = new bool[4];
+    public static int power = 0;
 
     void Start()
     {

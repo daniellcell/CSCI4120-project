@@ -22,6 +22,7 @@ public class InteractScript : MonoBehaviour
         {
             KeyItemScript key = collision.collider.GetComponent<KeyItemScript>();
             Inventory.keys[key.index] = true;
+            Inventory.power++;
             Destroy(collision.collider.gameObject);
         }
 
