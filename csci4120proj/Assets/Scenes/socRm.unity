@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427147, b: 0.56452364, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1327,6 +1327,30 @@ MonoBehaviour:
   m_restoreStateOnStart: 0
   m_usePlayerSpawnpoint: 1
   m_multiscene: 0
+--- !u!114 &217551086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217551075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4a544b39db2454385d5ba68b6a1459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &217551087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217551075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22113934f8bea49578f807d01d67eeaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &218017415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6208,7 +6232,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.00014296484, y: 0.9997171, z: -0.022958403, w: -0.0062253727}
+  m_LocalRotation: {x: -0.00007033024, y: 0.9997318, z: -0.022958737, w: -0.0030625197}
   m_LocalPosition: {x: -5.867922, y: 0.235, z: 0.21361017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6579,8 +6603,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004675582}
-  m_LocalRotation: {x: 0.08759448, y: 0.6919417, z: -0.08518191, w: 0.7115392}
-  m_LocalPosition: {x: -0.0000020027162, y: 0, z: 0}
+  m_LocalRotation: {x: 0.08759447, y: 0.6919416, z: -0.0851819, w: 0.71153927}
+  m_LocalPosition: {x: -0.0000034332277, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 329556822}
@@ -7351,7 +7375,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181215899}
-  m_LocalRotation: {x: 0.016132949, y: 0.7113087, z: -0.016335132, w: 0.70250475}
+  m_LocalRotation: {x: 0.016184542, y: 0.70908266, z: -0.016284004, w: 0.70475155}
   m_LocalPosition: {x: -0.0000008583069, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7788,6 +7812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 7d7bf6c92ae13cd478d73a6c6bc5fb4e, type: 3}
+      propertyPath: m_TagString
+      value: KeyItem
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 7d7bf6c92ae13cd478d73a6c6bc5fb4e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8173,6 +8201,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.31558472, y: 0.3083824, z: 0.23376179}
   m_Center: {x: -0.00042585284, y: 0.0404044, z: -0.00029459968}
+--- !u!114 &1319495782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319495775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb116e2d71fc14f5c8418d9ca267ce51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1001 &1336489986
 PrefabInstance:
   m_ObjectHideFlags: 0
