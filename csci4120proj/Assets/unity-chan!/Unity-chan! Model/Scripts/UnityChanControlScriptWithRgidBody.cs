@@ -19,6 +19,12 @@ namespace UnityChan
 		public bool useCurves = true;               // Mecanimでカーブ調整を使うか設定する
 													// このスイッチが入っていないとカーブは使われない
 		public float useCurvesHeight = 0.5f;        // カーブ補正の有効高さ（地面をすり抜けやすい時には大きくする）
+		public AudioClip WalkClip;
+		AudioSource WalkAudio;
+		//public AudioClip BackClip;
+		//AudioSource BackAudio;
+		public AudioClip JumpClip;
+		AudioSource JumpAudio;
 
 		// 以下キャラクターコントローラ用パラメタ
 		// 前進速度
@@ -52,6 +58,9 @@ namespace UnityChan
 		// 初期化
 		void Start()
 		{
+			WalkAudio = AddAudio(true, false, 0.6f);
+			//BackAudio = AddAudio(true, false, 1.0f);
+			JumpAudio = AddAudio(false, false, 0.6f);
 			// Animatorコンポーネントを取得する
 			anim = GetComponent<Animator>();
 			// CapsuleColliderコンポーネントを取得する（カプセル型コリジョン）
@@ -62,6 +71,17 @@ namespace UnityChan
 			// CapsuleColliderコンポーネントのHeight、Centerの初期値を保存する
 			orgColHight = col.height;
 			orgVectColCenter = col.center;
+		}
+
+
+		public AudioSource AddAudio(bool loop, bool playAwake, float vol)
+		{
+			AudioSource newAudio = gameObject.AddComponent<AudioSource>();
+			//newAudio.clip = clip; 
+			newAudio.loop = loop;
+			newAudio.playOnAwake = playAwake;
+			newAudio.volume = vol;
+			return newAudio;
 		}
 
 
@@ -76,7 +96,16 @@ namespace UnityChan
 			currentBaseState = anim.GetCurrentAnimatorStateInfo(0); // 参照用のステート変数にBase Layer (0)の現在のステートを設定する
 			rb.useGravity = true;//ジャンプ中に重力を切るので、それ以外は重力の影響を受けるようにする
 
-
+			if (Input.GetKeyDown("w"))
+			{
+				WalkAudio.clip = WalkClip;
+				WalkAudio.Play();
+			}
+			else
+			{
+				WalkAudio.clip = WalkClip;
+				WalkAudio.Pause();
+			}
 
 			// 以下、キャラクターの移動処理
 			velocity = new Vector3(0, 0, v);        // 上下のキー入力からZ軸方向の移動量を取得
@@ -92,23 +121,23 @@ namespace UnityChan
 				velocity *= backwardSpeed;  // 移動速度を掛ける
 			}
 
-			if (Input.GetButtonDown("Jump"))
+			if (Input.GetButtonDown("Jump") && !JumpAudio.isPlaying)
 			{   // スペースキーを入力したら
-
+				JumpAudio.clip = JumpClip;
+				JumpAudio.pitch = 0.9f;
+				JumpAudio.Play();
 				//アニメーションのステートがLocomotionの最中のみジャンプできる
 				if (currentBaseState.nameHash == locoState)
 				{
 					//ステート遷移中でなかったらジャンプできる
 					if (!anim.IsInTransition(0))
 					{
+
 						rb.AddForce(Vector3.up * jumpPower, ForceMode.VelocityChange);
 						anim.SetBool("Jump", true);     // Animatorにジャンプに切り替えるフラグを送る
 					}
 				}
 			}
-
-
-
 
 			// 上下のキー入力でキャラクターを移動させる
 			transform.localPosition += velocity * Time.deltaTime;
@@ -122,6 +151,7 @@ namespace UnityChan
 			// 現在のベースレイヤーがlocoStateの時
 			if (currentBaseState.nameHash == locoState)
 			{
+				WalkAudio.Play();
 				//カーブでコライダ調整をしている時は、念のためにリセットする
 				if (useCurves)
 				{
@@ -173,6 +203,8 @@ namespace UnityChan
 			}
 			else if (currentBaseState.nameHash == pushState)
 			{
+				WalkAudio.Stop();
+				//JumpAudio.Stop();
 				if (useCurves)
 				{
 					resetCollider();
@@ -186,6 +218,8 @@ namespace UnityChan
 			// 現在のベースレイヤーがidleStateの時
 			else if (currentBaseState.nameHash == idleState)
 			{
+				WalkAudio.Stop();
+				//JumpAudio.Stop();
 				//カーブでコライダ調整をしている時は、念のためにリセットする
 				if (useCurves)
 				{
