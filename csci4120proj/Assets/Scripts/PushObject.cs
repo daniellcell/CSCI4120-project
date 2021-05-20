@@ -15,6 +15,7 @@ public class PushObject : MonoBehaviour
 
     Vector3 lastPos;
     float _PushingTime = 0;
+    public int massLevel = 0;
 
 
 
@@ -77,7 +78,7 @@ public class PushObject : MonoBehaviour
             anim = player.GetComponent<Animator>();
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("Push"))
             {
-                if (Inventory.power >= rb.mass){
+                if (Inventory.power >= massLevel){
                     rb.isKinematic = false;
                     dir = collision.contacts[0].point - transform.position;
                     dir = -dir.normalized;
