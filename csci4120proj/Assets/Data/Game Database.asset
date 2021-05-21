@@ -84,6 +84,7 @@ MonoBehaviour:
     - {fileID: 2800000, guid: 9906db8a776334df1b8a3c0ad2bd8df5, type: 3}
     - {fileID: 2800000, guid: 05b4940817b6a4f1b85e9986be02889b, type: 3}
     - {fileID: 2800000, guid: d1c305ed9febd4aaab9d395a7595e0fb, type: 3}
+    - {fileID: 0}
   items:
   - id: 3
     fields:
@@ -916,7 +917,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[pic=2]YAHO~'
+        value: '[pic=6]YAHO~'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1058,7 +1059,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[pic=2]Well..that''s not important now...'
+        value: '[pic=6]Well..that''s not important now...'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1129,7 +1130,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Do you feel confused~?
+        value: '[pic=6]Do you feel confused~?'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -2658,8 +2659,8 @@ MonoBehaviour:
         y: 817.70074
         width: 160
         height: 30
-    canvasScrollPosition: {x: 11.19185, y: 480.76285}
-    canvasZoom: 0.88925284
+    canvasScrollPosition: {x: 0, y: 0.96352506}
+    canvasZoom: 0.94600123
   - id: 4
     fields:
     - title: Title
