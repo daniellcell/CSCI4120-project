@@ -19,12 +19,7 @@ public bool isPressed01 = false;
 public bool isPressed02 = false;
  
 static int Saki = 0;
-static int Yumi = 0;
-static int Hikari = 0; // temporary name
-static int Ashley = 0;
-static int Elisa = 0;
-static int Mika = 0;
-static int Minako = 0; // last name will be changed
+
 public int ChoiceMade = 0;
 static int badPoint = 0;
 static int goodPoint = 0;
