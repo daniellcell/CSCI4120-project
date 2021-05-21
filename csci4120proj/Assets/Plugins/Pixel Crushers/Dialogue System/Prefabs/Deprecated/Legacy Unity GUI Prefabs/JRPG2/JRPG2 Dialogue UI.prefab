@@ -46,20 +46,20 @@ MonoBehaviour:
   depth: 0
   depthSortChildren: 0
   scaledRect:
-    origin: 6
-    alignment: 6
+    origin: 0
+    alignment: 0
     x:
       scale: 0
       value: 0
     y:
-      scale: 0
-      value: -126
+      scale: 1
+      value: 0
     width:
       scale: 1
       value: 1
     height:
-      scale: 0
-      value: 30
+      scale: 1
+      value: 0.2
     minPixelWidth: 0
     minPixelHeight: 0
   autoSize:
@@ -155,20 +155,20 @@ MonoBehaviour:
   depth: 0
   depthSortChildren: 0
   scaledRect:
-    origin: 6
-    alignment: 6
+    origin: 0
+    alignment: 0
     x:
       scale: 0
-      value: 0
+      value: 20
     y:
-      scale: 0
-      value: 0
+      scale: 1
+      value: 0.15
     width:
       scale: 1
-      value: 1
+      value: 0.8
     height:
-      scale: 0
-      value: 116
+      scale: 1
+      value: 0.8
     minPixelWidth: 0
     minPixelHeight: 116
   autoSize:
@@ -1166,7 +1166,7 @@ MonoBehaviour:
     origin: 8
     alignment: 8
     x:
-      scale: 0
+      scale: 1
       value: 0
     y:
       scale: 0
@@ -1176,7 +1176,7 @@ MonoBehaviour:
       value: 1
     height:
       scale: 1
-      value: 384
+      value: 1
     minPixelWidth: 0
     minPixelHeight: 384
   autoSize:
@@ -1306,8 +1306,8 @@ MonoBehaviour:
       scale: 1
       value: 0.9
     height:
-      scale: 0
-      value: 160
+      scale: 1
+      value: 0.3
     minPixelWidth: 0
     minPixelHeight: 0
   autoSize:
@@ -1651,25 +1651,25 @@ MonoBehaviour:
     origin: 8
     alignment: 8
     x:
-      scale: 0
-      value: 0
+      scale: 1
+      value: 0.5
     y:
       scale: 0
       value: 0
     width:
-      scale: 0
-      value: 512
+      scale: 1
+      value: 1
     height:
-      scale: 0
-      value: 512
-    minPixelWidth: 0
-    minPixelHeight: 0
+      scale: 1
+      value: 1
+    minPixelWidth: 512
+    minPixelHeight: 512
   autoSize:
     autoSizeWidth: 0
     autoSizeHeight: 0
     maxWidth:
       scale: 1
-      value: 1
+      value: 0.5
     maxHeight:
       scale: 1
       value: 1
