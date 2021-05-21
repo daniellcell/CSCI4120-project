@@ -44,8 +44,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
   controlID: 138
 --- !u!114 &3
@@ -143,8 +143,8 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 139
 --- !u!114 &7
@@ -168,7 +168,7 @@ MonoBehaviour:
     y: 0
     width: 1316
     height: 947
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 62
@@ -193,8 +193,8 @@ MonoBehaviour:
     y: 0
     width: 1316
     height: 528
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 63
 --- !u!114 &9
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 321
     height: 528
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -298,8 +298,8 @@ MonoBehaviour:
     y: 0
     width: 604
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -503,14 +503,18 @@ MonoBehaviour:
   watches: []
   autoUpdateWatches: 0
   watchUpdateFrequency: 1
-  nextWatchUpdateTime: 232.1225628
+  nextWatchUpdateTime: 1889.4757937
   watchableVariableNames:
   - Actor
   - ActorIndex
   - Alert
   - Conversant
   - ConversantIndex
+  - Danso
+  - Mahjong
+  - Martial
   - ShowDialog
+  - TV
   watchableQuestNames:
   - Escape the room
   luaCommand: 
@@ -531,9 +535,13 @@ MonoBehaviour:
   - Empty msg
   - Intro
   - Green
-  - Red
   - Purple
+  - Red
   - Yellow
+  - Mahjong
+  - TV
+  - Danso
+  - Martial
   conversationIndex: -1
   snapToGridAmount: 0
   confirmDelete: 1
@@ -720,9 +728,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fa4d0000
-      m_LastClickedID: 19962
-      m_ExpandedIDs: 4cfbffff34500000
+      m_SelectedIDs: 244f0000
+      m_LastClickedID: 20260
+      m_ExpandedIDs: 40fbffff764a000058500000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -782,9 +790,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.3895516, y: 0.27911428, z: 0.08397086}
+    m_Target: {x: 1.8108301, y: 0.30934334, z: -3.5242476}
     speed: 2
-    m_Value: {x: -3.3895516, y: 0.27911428, z: 0.08397086}
+    m_Value: {x: 1.8108301, y: 0.30934334, z: -3.5242476}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -831,13 +839,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.056463223, y: 0.4502, z: -0.028544676, w: 0.89069855}
+    m_Target: {x: 0.047773894, y: 0.8271747, z: -0.07115603, w: 0.5553986}
     speed: 2
-    m_Value: {x: 0.05646247, y: 0.45019397, z: -0.028544294, w: 0.89068663}
+    m_Value: {x: 0.047773153, y: 0.8271619, z: -0.07115493, w: 0.55539}
   m_Size:
-    m_Target: 0.1679349
+    m_Target: 4.3679347
     speed: 2
-    m_Value: 0.1679349
+    m_Value: 4.3679347
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -913,9 +921,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4570000
-    m_LastClickedID: 22516
-    m_ExpandedIDs: 00000000cc570000ce570000d057000000ca9a3b
+    m_SelectedIDs: 08580000
+    m_LastClickedID: 22536
+    m_ExpandedIDs: 00000000dc570000de570000e057000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -943,7 +951,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc570000ce570000d0570000
+    m_ExpandedIDs: 00000000dc570000de570000e0570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1056,7 +1064,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 203
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0

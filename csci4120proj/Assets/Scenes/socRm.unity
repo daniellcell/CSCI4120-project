@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427147, b: 0.56452364, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6466,7 +6466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7a2840b06cde3b479416623b4d15788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMessage: Press Escape for Menu
+  startMessage: 
   menuKey: 27
   guiSkin: {fileID: 0}
   closeWhenQuestLogOpen: 1
@@ -8833,7 +8833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4c45e4f6bb0dc4c9cbb067abc90b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
   ObMass: 0
   PushAtMass: 1
   PushingTime: 10
@@ -8879,11 +8879,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10333,7 +10333,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.000074021904, y: 0.99973124, z: -0.022958731, w: -0.0032232725}
+  m_LocalRotation: {x: -0.00014694803, y: 0.999716, z: -0.022958383, w: -0.006398822}
   m_LocalPosition: {x: -5.867922, y: 0.235, z: 0.21361017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -12445,7 +12445,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181215899}
-  m_LocalRotation: {x: 0.016181927, y: 0.709196, z: -0.016286612, w: 0.7046375}
+  m_LocalRotation: {x: 0.016130118, y: 0.7114306, z: -0.016337933, w: 0.7023813}
   m_LocalPosition: {x: -0.0000008583069, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -16092,7 +16092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4c45e4f6bb0dc4c9cbb067abc90b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
   ObMass: 0
   PushAtMass: 1
   PushingTime: 10
@@ -16138,11 +16138,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -18331,7 +18331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4c45e4f6bb0dc4c9cbb067abc90b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
   ObMass: 2
   PushAtMass: 1
   PushingTime: 10
@@ -18377,11 +18377,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -23821,7 +23821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4c45e4f6bb0dc4c9cbb067abc90b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 0}
+  soundClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
   ObMass: 2
   PushAtMass: 1
   PushingTime: 10
@@ -23859,11 +23859,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 8384c021523adab49956bc6fd3ce0935, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
